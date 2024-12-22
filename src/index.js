@@ -1,13 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter }  from 'react-router-dom';
+// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
+// import { store } from "./Helper/Redux/store";
+// import { ProSidebarProvider } from "react-pro-sidebar";
+// import { SidebarProvider } from "./Component/Sidebarpage/SideboxContext";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Provider store={store}>  */}
+      {" "}
+      {/* <SidebarProvider> */}
+        {/* <ProSidebarProvider> */}
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        {/* </ProSidebarProvider> */}
+      {/* </SidebarProvider> */}
+    {/* </Provider> */}
   </React.StrictMode>
 );
 

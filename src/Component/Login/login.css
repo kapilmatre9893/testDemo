@@ -1,0 +1,175 @@
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background-image: url("../../img//login-bg.png"); */
+    padding: 50px 0 70px;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.login-wrapper .card {
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+
+
+.login-inner {
+    background: linear-gradient(4.33deg, #1B4B7C 50.4%, #68CBE5 175.84%);
+    border-radius: 20px;
+}
+
+
+.login-inner .h4.text-gray-900 {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+
+
+.login-inner .form-control {
+    border: 2px solid #4078B1;
+    border-radius: 24px;
+    min-height: 52px;
+    font-weight: 500;
+    text-indent: 12px;
+    box-shadow: none !important;
+    background: #1B4B7C;
+    color: #fff;
+}
+
+
+.login-inner .btn {
+    border: none;
+    background: linear-gradient(100.82deg, #F27A21 59.46%, #F7E203 108.16%);
+    border-radius: 25px;
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.login-inner .small {
+    color: #fff;
+}
+
+.login-wrapper:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    content: '';
+    background: -webkit-linear-gradient(left, #F7E200 0%, #F7E200 16.6%, #5FC4BE 16.6%, #5FC4BE 33.3%, #1B4B7C 33.3%, #1B4B7C 50%, #8C78A2 50%, #8C78A2 66.6%, #68CBE5 66.6%, #68CBE5 83.3%, #F27A21 83.3%, #F27A21 100%);
+}
+
+
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+
+}
+
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: .35rem;
+}
+
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #b7b9cc solid 1px;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: 50% / 50% 50% no-repeat;
+}
+
+
+.login-inner .form-control::placeholder {
+    color: #999ba8;
+}
+
+.eyes_input {
+    position: relative;
+}
+
+span.password-toggle-icon {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    color: #FFF;
+}
